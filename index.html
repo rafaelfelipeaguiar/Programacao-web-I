@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roleta do Meme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="relogio" id="relogio"></div>
+  
+  <div class="dinheiro" id="dinheiro">Dinheiro: R$ 1.000</div>
+  
+  <div class="mensagem-vitoria" id="mensagemVitoria">
+    <button class="fechar" onclick="fecharMensagem()">✖</button>
+    <img src="./img/ganho.png" alt="Ganhou!" />
+    <p>Parabéns! Você ganhou R$ 100.000,00!</p>
+  </div>
+
+  <div class="mensagem-perda" id="mensagemPerda">
+    <img src="./img/perdeu.jpg" alt="Perdeu Tudo" />
+    <p>O tigrinho virou gato e você perdeu tudo!</p>
+    <button onclick="recarregarPagina()">Depositar Mais Dinheiro</button>
+  </div>
+
+  <div class="roleta-container">
+    <div class="seta"></div> 
+    <div class="roleta" id="roleta">
+      <div class="roleta-items">
+        <div class="item premio" id="item1">Prêmio</div>
+        <div class="item perder" id="item2">+20</div>
+        <div class="item perder" id="item3">-1000</div>
+        <div class="item perder" id="item4">-500</div>
+      </div>
+    </div>
+    <button onclick="girarRoleta()">Girar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
