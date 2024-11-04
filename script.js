@@ -25,7 +25,7 @@ function girarRoleta() {
   const perderPosicoes = [
     { angulo: 90, valor: -500 },
     { angulo: 180, valor: -1000 },
-    { angulo: 270, valor: 20 }
+    { angulo: 270, valor: 830 }
   ]; // Ângulos e valores para os itens "Perdeu"
   
   // Verifica se é horário pagante
